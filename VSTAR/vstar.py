@@ -8,6 +8,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("tex_name", type=str, help="The name of your tex file - e.g. `science.tex` or just `science` - it should be located in the same folder as the compiled PDF and should have the same name as this PDF")
     parser.add_argument("--PATH", type=str, default="C:/Program Files (x86)/chromedriver.exe", help="The path to your selenium webdriver")
+    parser.add_argument("--TBR", type=float, default=2, help="VSTAR detects changes to the `.tex` file and then subsequently refreshes the pdf after a given amount of time (it takes a little time to compile) - note: TBF = Time Before Refresh")
     args = parser.parse_args()
 
     pdf_name = tex_name = args.tex_name
@@ -48,7 +49,7 @@ def main():
             driver.switch_to.window(driver.window_handles[1])
 
         if data != former_data and pdf_name in driver.current_url:
-            time.sleep(1.5)
+            time.sleep(args.TBR)
             driver.refresh()
 
         former_data = data
