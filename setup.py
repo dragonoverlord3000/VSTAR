@@ -14,7 +14,7 @@ setup(
         'Development Status :: 1 - Planning',
         'Intended Audience :: Science/Research',
         'Operating System :: Microsoft :: Windows',
-        'Programming Language :: Python :: 3.8.1',
+        'Programming Language :: Python :: 3.8',
     ],
 
     entry_points = {
