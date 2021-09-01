@@ -9,7 +9,7 @@
     - preferably located in '`C:\Program Files (x86)\chromedriver.exe`'
 
 ### How to use
-1. Assuming that the requirements above have all been installed, just run `pip install VSTAR`
+1. Assuming that the requirements above have all been installed, just run `pip install VSTAR` - see '`https://pypi.org/project/VSTAR/0.1.0/`'
 2. Then, in your latex project folder, create a `.tex` file and it's corresponding `.pdf` file (e.g. using `pdflatex ___.tex`)
 3. Now, while in the project folder, run `vstar _____.tex`
 
