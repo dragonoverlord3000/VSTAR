@@ -4,7 +4,7 @@ setup(
     name='VSTAR',
     version='0.1.0',    
     description='Auto refresh for Latex in VS-code',
-    # url='https://github.com/',
+    url='https://github.com/dragonoverlord3000/VSTAR.git',
     author='Dragonoverlord3000',
     author_email='hugomn2002@gmail.com',
     packages=['VSTAR'],
